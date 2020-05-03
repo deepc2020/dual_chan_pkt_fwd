@@ -1,0 +1,15 @@
+{
+  "name": "Dragino Dual Channel TTN",
+  "version": "1.1",
+  "slug": "dragiondc",
+  "description": "Dual Channel Package Forwarder Dragino.",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "before",
+  "boot": "auto",
+  "options": {},
+  "schema": {},
+  "gpio": true,
+  "devices": ["/dev/mem:/dev/mem:rw", "/dev/gpiomem:/dev/gpiomem:rw","/dev/spidev0.0:/dev/spidev0.0:rw","/dev/spidev0.1:/dev/spidev0.1:rw"],
+  "privileged" : ["SYS_MODULE", "SYS_RAWIO"],
+  "apparmor" : false
+}
