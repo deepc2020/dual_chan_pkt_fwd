@@ -1,3 +1,6 @@
+Attention:
+This Version is for use with Home Assistant only and might not work outside of a ha docker container
+
 Dual Channel LoRaWAN Gateway
 ==============================
 This repository contains a proof-of-concept implementation of a dual
